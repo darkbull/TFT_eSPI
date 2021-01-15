@@ -1,7 +1,7 @@
 感谢作者创建如此 Awasome 的库，让单片机 GUI 开发由枯燥变的有趣。
 在学习过程中，对非英文字符的显示，作者网站上资料比较少，我总结了一下，把相关的经验稍微笔记一下，方便快速使用。
 
-像中文(Chinese Font，或者 CJK) 这类字符，在 examples 中，有 Smooth Font 的使用范例。在使用中文之前，必须需要先导出字体。
+像中文(Chinese Font，或者 CJK) 这类字符，在 examples 中，有 Smooth Font 的使用范例。在使用中文之前，需要先导出字体。
 
 在 Tools 目录中，Create_Smooth_Font 用于生成字体。看注释就行，这里需要下载字体文件，我使用 wqy-MicroHei.ttf 或者 NotoSansCJKsc-Regular.otf
 

@@ -26,6 +26,7 @@
 //  https://github.com/Bodmer/TFT_eSPI/tree/master/Tools/Create_Smooth_Font/Create_font
 
 #include "wqyMicroHei16.h"
+// #include "NotoSansCJKscRegular16.h"
 
 //====================================================================================
 //                                  Libraries
@@ -62,7 +63,7 @@ void loop() {
     //----------------------------------------------------------------------------
     // Anti-aliased font test
 
-    String test1 =
+    String test_str =
         "人皆生而平等，\n"
         "享有造物主赋予给他们\n"
         "的不可剥夺的权利，\n"
@@ -80,11 +81,15 @@ void loop() {
 
     tft.fillScreen(bg);
     tft.setCursor(0, 0);
-
-    tft.println(test1);
-
+    tft.println(test_str);
     // Remove font parameters from memory to recover RAM
     tft.unloadFont();
+
+    // tft.loadFont(wqyMicroHei16);
+    // tft.setCursor(100, 0);
+    // tft.println(test_str);
+    // // Remove font parameters from memory to recover RAM
+    // tft.unloadFont();
 
     while (1)
         ;
